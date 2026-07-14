@@ -9,7 +9,9 @@ diff.
 
 ## Install
 
-Grab the installer for your OS from this repo's **Releases** page.
+**➡️ [Download the latest release](https://github.com/nqnconsulting/flowspace-testing/releases/latest)** — or browse [all releases](https://github.com/nqnconsulting/flowspace-testing/releases).
+
+Grab the installer for your OS from the release's assets:
 
 - **macOS** (Apple Silicon): open the `.dmg`, drag FlowSpace to
   Applications. The build is not yet notarized — the FIRST launch must be
