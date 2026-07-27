@@ -1,4 +1,4 @@
-# FlowSpace — Tester Access
+# FlowSpace
 
 FlowSpace is a fast, native workbench for MuleSoft development: it renders
 Mule 4 configuration XML on an Anypoint-Studio-style canvas, lets you edit
@@ -7,9 +7,13 @@ settings) with byte-precise saves, and adds multi-workspace profiles,
 embedded terminals, and a built-in git review window with a visual flow
 diff.
 
+This repo is where FlowSpace is distributed. Every release here is the
+current app — the same build we run day to day, not a side branch or a
+cut-down demo.
+
 ## Install
 
-**➡️ [Download the latest release](https://github.com/nqnconsulting/flowspace-testing/releases/latest)** — or browse [all releases](https://github.com/nqnconsulting/flowspace-testing/releases).
+**➡️ [Download the latest release](https://github.com/nqnconsulting/flowspace-access/releases/latest)** — or browse [all releases](https://github.com/nqnconsulting/flowspace-access/releases).
 
 Grab the installer for your OS from the release's assets:
 
@@ -21,6 +25,9 @@ Grab the installer for your OS from the release's assets:
   the unsigned binary — choose **More info → Run anyway**.
 - **Linux**: `chmod +x` the `.AppImage` and run it, or install the
   `.deb`/`.rpm`.
+
+To update, download the newest release and install over the old one — your
+workspaces, profiles, and settings are kept.
 
 ## Quick start
 
@@ -42,15 +49,23 @@ Grab the installer for your OS from the release's assets:
 
 ## Feedback
 
-Please file everything — bugs, confusion, wishes — as **Issues** on this
-repo. A screenshot plus what you clicked is perfect. If the app ever shows
-a blank window or a dead button, say what you did right before; that's
-gold for us.
+Please send everything — bugs, confusion, wishes — either way:
 
-## Notes for testers
+- **Issues** on this repo, or
+- **quang@nqnconsulting.com**
 
-- Windows and Linux builds are young — the terminal and file dialogs
-  there have had less testing than macOS. Reports especially welcome.
-- Your project files: edits happen only when you save, all writes are
-  validated XML, and the app never touches git credentials — every git
-  operation runs read-only against the repo you added.
+A screenshot plus what you clicked is perfect. If the app ever shows a
+blank window or a dead button, say what you did right before; that's gold
+for us.
+
+## Good to know
+
+- **Not code-signed yet.** That's the Gatekeeper / SmartScreen prompt
+  above, not a problem with the download. Signing and notarization are on
+  the way.
+- **Windows and Linux builds are younger than macOS** — the terminal and
+  file dialogs there have had less mileage. Reports especially welcome.
+- **Your project files are safe.** Edits happen only when you save, all
+  writes are validated XML, and the app never touches git credentials —
+  every git operation runs against the repo you added, with your own
+  credentials.
